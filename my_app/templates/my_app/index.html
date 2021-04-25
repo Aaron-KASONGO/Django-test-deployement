@@ -12,5 +12,8 @@
     <input type="text" name="content" placeholder="Nouvelle Tâche">
     <button type="submit">Yes</button>
 </form>
+{% for task in tasks %}
+    <p>{{ task.title }}</p>
+{% endfor %}
 </body>
 </html>
